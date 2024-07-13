@@ -1,4 +1,4 @@
-#To create a project with Any angular project follow below steps
+#To create a project with any angular version follow below steps
 
 https://github.com/coreybutler/nvm-windows/releases   download nvm-setup.zip and extract.  Double-click nvm-setup.exe to start the installation process.
 
