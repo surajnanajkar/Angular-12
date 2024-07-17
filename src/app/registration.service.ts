@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RegistrationService {
   
+ 
   private apiUrl = 'http://localhost:8080/users/';
 
   constructor(private http: HttpClient) { }
@@ -18,6 +19,14 @@ export class RegistrationService {
 
   login(loginData: any) {
     return this.http.post<any>(this.apiUrl+'login', loginData);
+  }
+
+  isAuthenticated(): boolean {
+    return !!localStorage.getItem('isLoggedIn');
+  }
+
+  getRoles() {
+    return this.http.get<any>(this.apiUrl+'getRoles');
   }
 
 
